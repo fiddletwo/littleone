@@ -18,7 +18,7 @@ void (async () => {
         const commands = await loadCommands(commandsDirectory);
         for (const command of commands) {
             const { name, run } = command;
-            app.command(`/littleone-${name}`, async ({ command, ack, respond }) => {
+            app.command(`/lo-${name}`, async ({ command, ack, respond }) => {
                 await ack();
 
                 const args = command.text;
