@@ -26,6 +26,7 @@ const maxNameLength = 30;
 
 const command: Command = {
     name: "standings",
+    usage: "[league]",
     run: async (respond, args) => {
         const leagueInput = args[0]?.toLowerCase();
 

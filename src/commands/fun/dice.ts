@@ -2,6 +2,7 @@ import { Command } from "../../utils/commands";
 
 const command: Command = {
     name: "dice",
+    usage: "[count?]"
     run: async (respond, args) => {
         const count = args[0] ? parseInt(args[0]) : 1;
 

@@ -2,6 +2,7 @@ import { Command } from "../../utils/commands";
 
 const command: Command = {
     name: "square",
+    usage: "number",
     run: async (respond, args) => {
         if (args.length === 0) {
             await respond("No number was provided");

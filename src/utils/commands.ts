@@ -5,6 +5,7 @@ import { RespondFn } from "@slack/bolt";
 
 export type Command = {
     name: string;
+    usage?: string;
     run: (respond: RespondFn, args: string[]) => Promise<void>;
 };
 
