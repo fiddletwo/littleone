@@ -14,17 +14,23 @@ const app = new App({
 });
 
 void (async () => {
-    const commands = await loadCommands(commandsDirectory);
-    for (const command of commands) {
-        const { name, run } = command;
-        app.command(`/littleone-${name}`, async ({ ack, respond }) => {
-            await ack();
-            await run(respond);
-        });
+    try {
+        const commands = await loadCommands(commandsDirectory);
+        for (const command of commands) {
+            const { name, run } = command;
+            app.command(`/littleone-${name}`, async ({ command, ack, respond }) => {
+                await ack();
+
+                const args = command.text;
+                await run(respond, args === "" ? [] : args.split(" "));
+            });
+        }
+
+        console.log(`Loaded commands: ${commands.length}`);
+
+        await app.start();
+        console.log("Online");
+    } catch (err) {
+        console.error(err);
     }
-
-    console.log(`Loaded commands: ${commands.length}`);
-
-    await app.start();
-    console.log("Online");
 })();
