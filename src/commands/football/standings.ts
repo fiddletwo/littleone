@@ -10,6 +10,9 @@ type Stat = {
 const leagueMap: Record<string, string> = {
     epl: "eng.1",
     laliga: "esp.1",
+    bundesliga: "ger.1",
+    seriea: "ita.1",
+    ligue1: "fra.1",
 };
 const leagueOptions: string[] = [];
 for (const name in leagueMap) {
