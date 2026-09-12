@@ -2,13 +2,13 @@
     "name": "littleone",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "index.ts",
     "scripts": {
         "lint": "oxlint"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "devEngines": {
         "packageManager": {
             "name": "pnpm",
