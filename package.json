@@ -2,9 +2,9 @@
     "name": "littleone",
     "version": "1.0.0",
     "description": "",
-    "main": "index.ts",
+    "main": "src/index.ts",
     "scripts": {
-        "lint": "oxlint"
+        "start": "tsx ./src/index.ts"
     },
     "keywords": [],
     "author": "",
@@ -20,11 +20,13 @@
     "type": "module",
     "dependencies": {
         "@slack/bolt": "^5.1.0",
+        "@types/node": "^22.20.2",
         "dotenv": "^17.4.2"
     },
     "devDependencies": {
         "oxfmt": "^0.67.0",
         "oxlint": "^1.82.0",
-        "oxlint-tsgolint": "^7.0.2001"
+        "oxlint-tsgolint": "^7.0.2001",
+        "tsx": "^4.23.13"
     }
 }
