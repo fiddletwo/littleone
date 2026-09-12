@@ -1,0 +1,30 @@
+{
+    "name": "littleone",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "oxlint"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "12.4.1",
+            "onFail": "download"
+        }
+    },
+    "packageManager": "pnpm@12.4.1",
+    "type": "module",
+    "dependencies": {
+        "@slack/bolt": "^5.1.0",
+        "dotenv": "^17.4.2"
+    },
+    "devDependencies": {
+        "oxfmt": "^0.67.0",
+        "oxlint": "^1.82.0",
+        "oxlint-tsgolint": "^7.0.2001"
+    }
+}
