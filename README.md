@@ -1,5 +1,5 @@
 # littleone
-A slack bot with various fun features
+A Slack bot with various fun features
 
 ## Features
 - Football standings lookup for the top 5 leagues in Europe
