@@ -11,7 +11,7 @@ Commands should be prefixed with `/`
 lo-help
 lo-root [number]
 lo-square [number]
-lo-dice [count?]
+lo-dice [number?]
 lo-standings [epl | laliga | bundesliga | seriea | ligue1]
 ```
 
