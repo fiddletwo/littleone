@@ -5,6 +5,16 @@ A Slack bot with various fun features
 - Football standings lookup for the top 5 leagues in Europe
 - Some other number related commands
 
+## Commands
+Commands should be prefixed with `/`
+```
+lo-help
+lo-root [number]
+lo-square [number]
+lo-dice [count?]
+lo-standings [epl | laliga | bundesliga | seriea | ligue1]
+```
+
 ## Quick Start
 To run this bot yourself, first clone this repository.
 
